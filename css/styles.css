@@ -35,3 +35,49 @@
   *::after {
   	box-sizing: inherit;
   }
+  body{
+    font-family: "Roboto", sans-serif;
+  }
+  .avatar_card{
+    max-width: 400px;
+    background-color: #484956;
+    padding: 45px 0 0 25px;
+    color:#fff;
+  }
+  .avatar_card-heading{
+    margin: 0;
+  }
+  .avatar_card-title{
+    margin: 0;
+    padding-bottom: 250px;
+    font-size: 25px;
+  }
+  .avatar_card-title::after{
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: tomato;
+    content: "";
+  }
+  .avatar_name{
+    position: relative;
+    padding-left: 80px;
+    padding-bottom: 65px;
+    text-transform: capitalize;
+  }
+  .avatar_name::before{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: url("../img/avatar.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+    content: "";
+  }
