@@ -40,10 +40,11 @@
     background-color: #f2ce97;
   }
   .user-info{
-    display: flex;
     max-width: 1000px;
+    display: flex;
+    max-width: 948px;
     margin: 50px auto 0;
-    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
   }
   .avatar_card{
     max-width: 400px;
@@ -115,5 +116,38 @@
     padding-right: 50px;
     padding-top: 35px;
     padding-bottom: 35px;
-    box-shadow: 0  0 2px 2px rgba(0,0,0,0.5)
+    box-shadow: 0  0 10px 2px rgba(0,0,0,0.2)
+  }
+  .data{
+    text-transform: capitalize;
+  }
+  .noticification{
+    position: relative;
+    padding-right: 20px;
+    color:#aaa;
+  }
+  .noticification::before{
+position: absolute;
+top: 0;
+left: -25px;
+display: block;
+width: 20px;
+height: 20px;
+background-image: url("../img/comment.svg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+    content: "";
+  }.noticification::after{
+position: absolute;
+top: 0;
+right: -20px;
+display: block;
+width: 20px;
+height: 20px;
+background-image: url("../img/more.svg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+    content: "";
   }
